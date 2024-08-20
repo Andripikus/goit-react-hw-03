@@ -1,0 +1,6 @@
+/* Стилі для списку контактів */
+.contactList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
