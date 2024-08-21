@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from './SearchBox.module.css'; // Імпорт стилів
+import React from "react";
+import css from "./SearchBox.module.css"; // Імпорт стилів
 
 export default function SearchBox({ filter, onChange }) {
   return (
-    <div className={styles.searchBox}>
+    <div className={css.searchBox}>
       <input
-        className={styles.input}
+        className={css.input}
         type="text"
         value={filter}
         onChange={onChange}

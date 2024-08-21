@@ -32,6 +32,7 @@ export default function ContactForm({ onAddContact }) {
             Name:
           </label>
           <Field
+            id="name"
             className={`${styles.input} ${
               errors.name && touched.name ? styles.errorInput : ""
             }`}
@@ -39,12 +40,12 @@ export default function ContactForm({ onAddContact }) {
             type="text"
             placeholder="Enter contact name"
           />
-          <ErrorMessage className={styles.error} name="name" component="div" />
-
+          <ErrorMessage className={styles.error} name="name" component="span" />
           <label className={styles.label} htmlFor="number">
             Number:
           </label>
           <Field
+            id="number"
             className={`${styles.input} ${
               errors.number && touched.number ? styles.errorInput : ""
             }`}
@@ -55,9 +56,8 @@ export default function ContactForm({ onAddContact }) {
           <ErrorMessage
             className={styles.error}
             name="number"
-            component="div"
+            component="span"
           />
-
           <button className={styles.button} type="submit">
             Add contact
           </button>
